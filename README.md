@@ -45,12 +45,32 @@ Todo el desarrollo, diseño y código fuente original de la aplicación pertenec
 ```plaintext
 RomM-DS64/
 │
-├── .env.example          # Plantilla con las variables de entorno requeridas
-├── .env                  # Archivo de credenciales locales (a crear, ignorado por Git)
-├── .gitignore            # Exclusión de archivos sensibles
-├── docker-compose.yml    # Definición del stack de servicios
-└── README.md             # Documentación del despliegue
+├── .env.example              # Plantilla con las variables de entorno requeridas
+├── .env                      # Archivo de credenciales locales (a crear, ignorado por Git)
+├── .gitignore                # Exclusión de archivos sensibles
+├── docker-compose.yml        # Definición del stack de servicios
+├── PASO-A-PASO_RomM-DS64.pdf # Guía visual paso a paso para introducir juegos
+├── resources/                # Capturas de pantalla y recursos gráficos
+└── README.md                 # Documentación del despliegue
 ```
+
+---
+
+## Flujo de Trabajo y Guía de Juegos
+
+Para consultar el procedimiento detallado con capturas de pantalla sobre la obtención de copias de seguridad mediante qBittorrent, repositorios de preservación (Minerva Archive No-Intro), subida masiva y emulación en el navegador, haz clic sobre el nodo final del siguiente diagrama:
+
+```mermaid
+flowchart TD
+    A["1. Despliegue del Stack<br/>docker compose up -d"] --> B["2. Setup Inicial en RomM<br/>Biblioteca y Administrador"]
+    B --> C["3. Descarga de Herramientas y ROMs<br/>qBittorrent y Minerva Archive"]
+    C --> D["4. Carga Masiva y Emulación<br/>Subida a RomM y EmulatorJS"]
+    D --> E["Ver Guía Detallada: PASO-A-PASO_RomM-DS64.pdf"]
+
+    click E "PASO-A-PASO_RomM-DS64.pdf" "Abrir documento PASO-A-PASO_RomM-DS64.pdf"
+```
+
+Documento de referencia: [PASO-A-PASO_RomM-DS64.pdf](PASO-A-PASO_RomM-DS64.pdf)
 
 ---
 
